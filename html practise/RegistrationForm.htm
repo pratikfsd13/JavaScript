@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>
+        <center>Registration Form</center>
+    </h1>
+    <form>
+        <center>
+            Full Name:<input type="text" name="Full Name" placeholder="Full Name" required><br><br>
+            Gender:<input type="radio" name="Gender" value="Male" required>Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Other">Other<br><br>
+            Email:<input type="email" name="Email" placeholder="Email" required><br><br>
+            Date of Birth:<input type="date" name="Date of Birth" required><br><br>
+            Profile Picture:<input type="file" name="Profile Picture" required><br><br>
+            Language Known:<input type="checkbox" name="Language Known" value="English"> English
+            <input type="checkbox" name="Language Known" value="Hindi"> Hindi
+            <input type="checkbox" name="Language Known" value="Gujarati"> Gujarati<br><br>
+            <input type="checkbox" name="Language Known" value="Marathi"> Marathi
+            <input type="checkbox" name="Language Known" value="Spanish"> Spanish
+            <input type="checkbox" name="Language Known" value="French"> French<br><br>
+            Country:<select name="Country"required>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="Bhutan">Bhutan</option>
+            </select><br><br>
+            Enter Message: <textarea rows="5" cols="50" placeholder="Enter your message here..."
+                maxlength="120"></textarea><br><br>
+            <input type="submit" value="Register Here"> <br>
+            Question: How are you feeling now? <br>
+            A) I am feeling Good  <input type="radio" name="ans"> <br>
+            B) I am feeling Happy <input type="radio" name="ans"> <br>
+            C) I am feeling Angry <input type="radio" name="ans"> <br>
+            D) I am feeeling Calm <input type="radio" name="ans"> <br>
+        </center>
+    </form>
+</body>
+</html>
