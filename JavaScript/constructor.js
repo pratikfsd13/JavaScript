@@ -3,6 +3,7 @@ function Student(name,age){
     this.age=age;
     this.introduce=function(){
         console.log(`Hi, I am ${this.name}, ${this.age} years old`);
+        
     }
 }
 
