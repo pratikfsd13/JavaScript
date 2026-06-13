@@ -1,4 +1,4 @@
-const countDown = (num) => {
+7777const countDown = (num) => {
     if (num===0) 
         return
     console.log(num);
