@@ -9,6 +9,9 @@ let user = {
 }
 
 for(let key in user){
-    console.log(key, user[key]); // it will print all the keys of the object    
+    if (Array.isArray(user[key])) {
+        console.log(key, ":" , user[key]); // it will print all the keys of the object which are array
+    } else {
+        console.log(key, ":" , user[key]); // it will print all the keys of the object
+    }
 }
-   

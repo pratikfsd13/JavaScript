@@ -15,4 +15,4 @@ console.log("Greet: ", user.greet?.()); //Hello
 const array=[1,2,3,4,5];
 console.log("First element: ", array?.[0]); //1
 console.log("Fifth element: ", array?.[4]); //5
-console.log("Sixth element: ", array?.[5]); //undefined 
+console.log("Sixth element: ", array?.[5]); //undefined  
