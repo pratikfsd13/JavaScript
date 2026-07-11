@@ -1,0 +1,19 @@
+li{
+    background-color: rgb(182, 221, 7);
+    margin: 15px ;
+    padding: 25px;
+    text-align: center;
+    text-decoration: bold;
+
+}
+button{
+    background-color: rgb(182, 221, 7);
+    margin: 5px ;
+    padding: 10px;
+    text-align: center; 
+}
+placeholder
+{
+    color: rgb(182, 221, 7);
+    font-size: 20px;
+}
