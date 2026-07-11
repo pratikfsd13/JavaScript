@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Image Demo </h2>
+    <button onclick="show()"> Show </button> </br>
+    <img alt="Nature image with raindrop sphere and water pattern"/>
+    <script>
+        function show() {
+            let element = document.querySelector('img');
+            let btn = document.querySelector('button');
+            if (btn.textContent == 'Show') {
+                element.setAttribute('src','https://static.vecteezy.com/system/resources/thumbnails/025/189/222/small_2x/vibrant-raindrop-sphere-reflects-nature-beauty-in-abstract-water-pattern-generated-by-ai-free-photo.jpg');
+                btn.textContent = 'Hide';
+                btn.style.backgroundColor="yellow";
+            } else {
+                element.setAttribute('src','');
+                btn.textContent ='Show';
+                btn.style.backgroundColor="green";
+            }
+        }
+    </script>
+
+</body>
+</html>

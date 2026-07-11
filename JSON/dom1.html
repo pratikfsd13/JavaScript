@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Welcome to DOM </h1>
+    <p class="red"> Test Paragraph </p>
+    <p> India is my country. All Indians are my brothers and sisters.I love my county and I am proud of its rich varied haritages. </p>
+    <Button onclick="changeTitle()"> Change Title </Button>
+    <script>
+        function changeTitle() {
+            const element = document.getElementById("title");
+            element.textContent = "Hello Sonam Soni" ;
+             
+            const paras = document.getElementsByClassName("red");
+            paras [0].style.color ="red";
+            paras [0].style.fontsize ="30"
+
+        }
+    </script>
+</body>
+</html>

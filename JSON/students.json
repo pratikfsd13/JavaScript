@@ -1,0 +1,24 @@
+{
+    "school": "Physics Wallah",
+    "email": "support@pw.live",
+    "students": [
+        {
+            "name": "Alex",
+            "age": "26",
+            "email": "alexstuwards@yahoo.uk",
+            "Contact": "9876543210"
+        },
+        {
+            "name": "Alexis",
+            "age": "29",
+            "email": "alexis@yahoo.us",
+            "Contact": "9890520269"
+        },
+        {
+            "name": "Bob Builder",
+            "age": "33",
+            "email": "bobthebuilder@gmail.com",
+            "Contact": "9876874624"
+        }
+    ]
+}
