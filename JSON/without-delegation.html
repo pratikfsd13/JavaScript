@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+<input type="text" id="txt" placeholder="Type something...">
+<button id="Btn">Add Item</button>
+<script>
+    //this listener working for all the li elements
+    const list = document.querySelectorAll('li');
+    list.forEach(li =>li.addEventListener('click',()=> {
+            console.log(li.innerText);
+        }));
+    document.getElementById('Btn').addEventListener('click', ()=> {
+        const input = document.getElementById('txt');
+        const newLi = document.createElement('li');
+        newLi.innerText = input.value;
+        list.appendChild(newLi);
+        input.value = '';
+    });
+</script>
+</body>
+</html>

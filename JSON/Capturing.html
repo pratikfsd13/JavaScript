@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        #parent {
+            background-color: lightblue;
+            width: 600px;
+            height: 400px;
+            padding: 30px;
+        }
+        #span {
+            padding: 70px;
+            background-color: limegreen;
+        
+        }
+        #child {
+            background-color: gray;
+            padding: 40px 50px;
+        }
+
+    </style>
+</head>
+<body class="container">
+    <div id="parent">
+        Parent
+        <br> <br>
+        <span id="span"> 
+            <button id="child"> Click Me </button>
+        </span>
+    </div>
+    <script>
+
+        const parent = document.getElementById("parent");
+        const span = document.getElementById("span");
+        const child = document.getElementById("child");
+        parent.addEventListener('click', function() {
+            document.body.style.backgroundColor = "blue" ;
+            console.log("Parent Div clicked");
+        }, true)
+
+        span.addEventListener('click', function() { 
+            document.body.style.backgroundColor = "white" ;
+            console.log("Span clicked");
+        }, true) // capturing phase
+
+        child.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevents the event from bubbling up to the parent
+            document.body.style.backgroundColor = "pink";
+            console.log("Child clicked");
+        }, true) // capturing phase
+        </script>
+</body>
+</html>

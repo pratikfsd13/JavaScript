@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com" id="link">Google</a>
+    <form id="form">
+        <input type="text" placeholder="Enter something..." id="input">
+        <button type="submit">Submit</button>
+        <br>
+        <label for="check">
+            <input type="checkbox" id="check"> 
+            Agree to Terms
+        </label>
+    </form>
+    <script>
+        const link = document.getElementById('link');
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('Link clicked, but default action prevented.');
+        });
+
+        const form = document.getElementById('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log('Form submitted, but default action prevented.');
+        });
+
+        document.getElementById('check').addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Checkbox clicked, but default action prevented.');
+        });
+    </script>
+ </body>
+</html>
