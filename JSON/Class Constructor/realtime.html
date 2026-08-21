@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+    <input type="text" id="age" placeholder="Enter your age"><br><br>
+    <input type="date" id="dob" placeholder="Enter your date of birth"><br><br>
+    <input type="email" id="email" placeholder="Enter your email"><br><br>
+    <button id="save">Save My Data</button>
+
+    <script>
+        const btn = document.getElementById('save');
+        btn.addEventListener('click', () => {
+            const nameInput = document.getElementById('name');
+            const ageInput = document.getElementById('age');
+            const dobInput = document.getElementById('dob');
+            const emailInput = document.getElementById('email');
+
+         localStorage.setItem("user1", JSON.stringify({
+                name: nameInput.value,
+                age: ageInput.value,
+                dob: dobInput.value,
+                email: emailInput.value
+            }));
+
+            alert('Data saved to localStorage!');
+
+        });
+    </script>
+</body>
+</html>
